@@ -177,6 +177,39 @@
       color: #555;
     }
 
+    /* Process */
+    .process-grid {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      gap: 24px;
+    }
+    .process-step {
+      text-align: center;
+      position: relative;
+    }
+    .process-step .num {
+      width: 48px;
+      height: 48px;
+      margin: 0 auto 18px;
+      background: #0F2A4A;
+      color: #C9A96E;
+      font-family: 'Playfair Display', serif;
+      font-size: 1.25rem;
+      font-weight: 700;
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+    .process-step h3 {
+      font-size: 1.1rem;
+      margin-bottom: 10px;
+    }
+    .process-step p {
+      font-size: 0.95rem;
+      color: #555;
+    }
+
     /* Contacts */
     .contacts-wrap {
       display: grid;
@@ -274,6 +307,10 @@
       .services-grid {
         grid-template-columns: 1fr;
       }
+      .process-grid {
+        grid-template-columns: 1fr 1fr;
+        gap: 28px;
+      }
       .contacts-wrap {
         grid-template-columns: 1fr;
         gap: 36px;
@@ -281,6 +318,11 @@
       footer .container {
         flex-direction: column;
         text-align: center;
+      }
+    }
+    @media (max-width: 480px) {
+      .process-grid {
+        grid-template-columns: 1fr;
       }
     }
   </style>
@@ -294,7 +336,7 @@
         <ul id="nav-menu">
           <li><a href="#about">О компании</a></li>
           <li><a href="#services">Услуги</a></li>
-          <li><a href="#experience">Опыт</a></li>
+          <li><a href="#process">Как мы работаем</a></li>
           <li><a href="#contacts">Контакты</a></li>
         </ul>
       </nav>
@@ -347,9 +389,9 @@
           <p>Представительство в судах и арбитраже, медиация и досудебное урегулирование коммерческих конфликтов.</p>
         </div>
         <div class="service-card">
-          <div class="icon">🏗️</div>
-          <h3>Недвижимость и строительство</h3>
-          <p>Сопровождение сделок с недвижимостью, девелоперских проектов и строительных контрактов в обеих странах.</p>
+          <div class="icon">💡</div>
+          <h3>Интеллектуальная собственность</h3>
+          <p>Регистрация товарных знаков, защита брендов, лицензионные договоры и споры по IP в России и Турции.</p>
         </div>
         <div class="service-card">
           <div class="icon">🌍</div>
@@ -360,39 +402,29 @@
     </div>
   </section>
 
-  <section id="experience">
+  <section id="process">
     <div class="container">
-      <h2>Опыт</h2>
-      <div class="services-grid">
-        <div class="service-card">
-          <div class="icon">⏳</div>
-          <h3>Многолетняя практика</h3>
-          <p>Годы работы на стыке российского и турецкого бизнеса: от первых переговоров до закрытия сложных сделок.</p>
+      <h2>Как мы работаем</h2>
+      <div class="process-grid">
+        <div class="process-step">
+          <div class="num">1</div>
+          <h3>Знакомство</h3>
+          <p>Обсуждаем задачу, цели и ограничения. Определяем, чем можем быть полезны.</p>
         </div>
-        <div class="service-card">
-          <div class="icon">📑</div>
-          <h3>Реализованные проекты</h3>
-          <p>Сопровождение инвестиционных и корпоративных проектов с участием компаний из России и Турции.</p>
+        <div class="process-step">
+          <div class="num">2</div>
+          <h3>Анализ и стратегия</h3>
+          <p>Изучаем ситуацию в обеих юрисдикциях и предлагаем оптимальную структуру решения.</p>
         </div>
-        <div class="service-card">
-          <div class="icon">🌐</div>
-          <h3>Трансграничные сделки</h3>
-          <p>Опыт ведения M&A, создания совместных предприятий и структурирования инвестиций между двумя рынками.</p>
+        <div class="process-step">
+          <div class="num">3</div>
+          <h3>Реализация</h3>
+          <p>Ведём переговоры, готовим документы и сопровождаем все этапы сделки или проекта.</p>
         </div>
-        <div class="service-card">
-          <div class="icon">🏢</div>
-          <h3>Отраслевой опыт</h3>
-          <p>Проекты в недвижимости, строительстве, торговле, производстве и сфере услуг.</p>
-        </div>
-        <div class="service-card">
-          <div class="icon">⚖️</div>
-          <h3>Сложные споры</h3>
-          <p>Успешное разрешение коммерческих и корпоративных конфликтов с иностранным элементом.</p>
-        </div>
-        <div class="service-card">
-          <div class="icon">🤝</div>
-          <h3>Долгосрочные клиенты</h3>
-          <p>Повторные обращения и многолетнее сотрудничество с предпринимателями и холдингами.</p>
+        <div class="process-step">
+          <div class="num">4</div>
+          <h3>Результат</h3>
+          <p>Доводим работу до закрытия и при необходимости продолжаем поддержку после сделки.</p>
         </div>
       </div>
     </div>
